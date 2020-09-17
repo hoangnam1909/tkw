@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000 !important;
+    overflow-x: hidden !important;
+}
+
+.container {
+    width: 100% !important;
+}
+
+.feature {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif !important;
+}
+
+.feature h1 {
+    color: #fff;
+    user-select: none;
+    font-size: 70px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-family: RazerFont, Arial, Helvetica, sans-serif;
+}
+
+.feature h2 {
+    color: #44d62c;
+    user-select: none;
+    font-size: 55px;
+    margin: 20px 0 10px 0;
+    z-index: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: RazerFont, Arial, Helvetica, sans-serif;
+}
+
+.feature h3 {
+    color: #fff;
+    user-select: none;
+    font-size: 45px;
+    font-weight: normal;
+    padding: 15px 0;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: RazerFont, Arial, Helvetica, sans-serif;
+}
+
+.feature div.content-infor {
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+    width: 900px;
+    margin-top: 10px;
+    font-size: 17px;
+    z-index: 1;
+    font-family: RazerFont, Arial, Helvetica, sans-serif;
+}
+
+.img-feature {
+    width: 900px;
+    margin-top: 15px;
+    z-index: -1;
+}
+
+.feature-detail {
+    color: #fff;
+    margin-top: 30px;
+    user-select: none;
+}
+
+.feature-detail ul {
+    max-width: 1200px;
+    min-width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature-detail ul li {
+    margin: 0 30px 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: RazerFont, Arial, Helvetica, sans-serif;
+}
+
+.feature-detail ul li img {
+    height: 80px;
+    margin: 0 auto;
+}
+
+.feature-detail ul li h5 {
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 5px;
+    max-width: 400px;
+}
+
+.feature-detail ul li h5 small {
+    color: #fff;
+    font-size: 16px;
+    font-family: RazerFont, Arial, Helvetica, sans-serif;
+}
+
+.feature-detail ul li h6 {
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 5px;
+    font-family: RazerFont, Arial, Helvetica, sans-serif;
+}
+
+.feature-detail ul li h6 small {
+    color: #fff;
+    font-family: RazerFont, Arial, Helvetica, sans-serif;
+}

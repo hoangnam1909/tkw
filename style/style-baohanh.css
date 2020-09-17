@@ -1,0 +1,44 @@
+.baohanh {
+    background-color: #e0e0e0;
+    display: flex;
+    user-select: none;
+    padding: 30px 40px;
+    justify-content: center;
+}
+
+.title-bh1 {
+    text-align: center;
+    font-size: 37px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #272727;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.heading1-bh {
+    color: #474747;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+
+.heading2-bh {
+    color: #6e6e6e;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+.content-bh {
+    font-size: 17px;
+    padding-left: 45px;
+    color: rgb(0, 0, 0);
+}
+
+.chinhsach-bh p {
+    margin: 15px 10px;
+    line-height: 20px;
+}

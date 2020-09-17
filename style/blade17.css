@@ -1,0 +1,103 @@
+section {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -65px;
+}
+
+.intro {
+    width: 2560px;
+    height: 1137px;
+    background-image: url(../IMG/RAZER/blade17/intro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    animation: intro 2s forwards;
+}
+
+.intro>h1 {
+    font-size: 50px;
+    position: relative;
+    top: 60px;
+    margin: 0;
+    text-align: center;
+}
+
+.intro>h2 {
+    color: #44d62c;
+    font-size: 40px;
+    position: relative;
+    top: 70px;
+    margin: 0;
+    text-align: center;
+}
+
+.forGaming {
+    width: 2560px;
+    height: 1706px;
+    background-image: url(../IMG/RAZER/blade17/forGaming.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.gpu {
+    width: 2560px;
+    height: 1250px;
+    background-image: url(../IMG/RAZER/blade17/gpu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.display {
+    width: 2560px;
+    height: 1240px;
+    background-image: url(../IMG/RAZER/blade17/display.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.display-work {
+    width: 2560px;
+    height: 1250px;
+    background-image: url(../IMG/RAZER/blade17/display-work.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.display-gaming {
+    width: 2560px;
+    height: 1250px;
+    background-image: url(../IMG/RAZER/blade17/display-gaming.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.feature-detail ul li h5 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.feature-detail ul li h5 small {
+    color: #ffffff;
+}
+
+.feature-detail ul li h6 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.feature-detail ul li h6 small {
+    color: #ffffff;
+    text-align: center;
+}
+
+.feature-detail ul li img {
+    height: 56px;
+    margin: 0 auto;
+}

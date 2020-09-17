@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  padding: 50px 0;
+}
+
+.box-login {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #222222;
+  background-image: url(../IMG/homepage/genesis.png);
+  background-position: center;
+  background-size: 380%;
+  background-repeat: no-repeat;
+  border: 1px solid #2b2b2b;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.logo-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logo-page img {
+  height: 100px;
+}
+
+.main-box-login {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.title-login {
+  text-align: center;
+  padding: 0 20px;
+  font-size: 40px;
+  margin: 20px 0;
+  color: white;
+  user-select: none;
+  text-transform: capitalize;
+  font-family: RazerFont, Arial, Helvetica, sans-serif !important;
+}
+
+.form-input p {
+  text-align: left;
+  padding-top: 20px;
+  font-size: 16px;
+  color: #a88b65;
+  user-select: none;
+}
+
+.form-input input {
+  width: 100%;
+  height: 50px;
+  margin: 15px 0;
+  padding: 0 3px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #626262;
+  background-color: transparent;
+  color: white;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+.form-input input:focus {
+  border-bottom: 1.3px solid #a88b65;
+}
+
+.form-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.option {
+  padding-left: 3px;
+}
+
+.option a {
+  color: #a88b65;
+  font-size: 14px;
+  text-align: right;
+  text-decoration: none;
+  margin-right: 20px;
+
+  transition: color 0.3s ease-in;
+}
+
+.form-button input[type="submit"] {
+  width: 98%;
+  height: 60px;
+  font-size: 23px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-button input[type="submit"]:hover {
+  background-color: #a88b65;
+}
+
+.form-button input[type="submit"]:active {
+  background-color: #7d684b;
+}
+
+.login-with {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}

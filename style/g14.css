@@ -1,0 +1,99 @@
+.introG14 {
+    width: 2560px;
+    height: 1106px;
+    margin-top: -95px;
+    background-image: url(../IMG/ROG/g14/intro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: intro 2s forwards;
+}
+
+.introG14 img {
+    position: relative;
+    top: 190px;
+    height: 558px;
+    animation: movingIntro 5s infinite;
+}
+
+.introG14 input[type=button] {
+    top: 900px;
+}
+
+.performanceG14 {
+    width: 2560px;
+    height: 1328px;
+    margin-top: 20px;
+    z-index: -1;
+    background-image: url(../IMG/ROG/g14/performance.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.displayG14 {
+    width: 2560px;
+    height: 1134px;
+    margin-top: 20px;
+    z-index: -1;
+    background-image: url(../IMG/ROG/g14/display.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.coolingG14 {
+    width: 2490px;
+    height: 823px;
+    margin-top: -40px;
+    z-index: -1;
+    background-image: url(../IMG/ROG/g14/cooling.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.audioG14 {
+    width: 1091px;
+    height: 871px;
+    margin-top: 50px;
+    z-index: -1;
+    background: url(../IMG/ROG/g14/audio.png) center no-repeat;
+    background-size: contain;
+}
+
+.accessoryG14 {
+    width: 2560px;
+    height: 1146px;
+    margin-top: -200px;
+    z-index: -1;
+    background: url(../IMG/ROG/g14/bundle.jpg) center no-repeat;
+    background-size: contain;
+}
+
+
+.g14 h1 {
+    letter-spacing: 5px;
+    font-size: 120px;
+    font-family: ROGFont, Arial, Helvetica, sans-serif;
+}
+
+.g14 h2 {
+    color: #fff;
+}
+
+.g14 ul li h5 {
+    color: #fff;
+}
+
+.g14>.feature-detail ul li h5 small {
+    color: #fff;
+}
+
+.g14 ul li h6 {
+    color: #b1b1b1;
+}
+
+.g14-table table thead tr th {
+    background-color: #7a7a7a !important;
+}

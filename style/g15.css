@@ -1,0 +1,155 @@
+.introG15 {
+    width: 2560px;
+    height: 1300px;
+    background-image: url(../IMG/ROG/g15/intro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: intro 2s forwards;
+}
+
+.introG15 img {
+    height: 700px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    animation: movingIntro 5s infinite;
+}
+
+.introG15 input[type=button] {
+    top: 1100px;
+}
+
+.performanceG15 {
+    width: 2560px;
+    height: 1289px;
+    margin-top: -200px;
+    z-index: -1;
+    background-image: url(../IMG/ROG/g15/performance.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.displayG15 {
+    width: 2560px;
+    height: 1860px;
+    margin-top: -450px;
+    z-index: -1;
+    background-image: url(../IMG/ROG/g15/display.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.productivityG15 {
+    width: 1920px;
+    height: 963px;
+    margin-top: 10px;
+    z-index: -1;
+    background-image: url(../IMG/ROG/g15/productivity.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.designG15 {
+    width: 2560px;
+    height: 1522px;
+    margin-top: -600px;
+    z-index: -1;
+    background-image: url(../IMG/ROG/g15/design.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: local;
+}
+
+.coolingG15 {
+    width: 2560px;
+    height: 1373px;
+    margin-top: -100px;
+    z-index: -1;
+    background-image: url(../IMG/ROG/s15/04cooling0.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain 100%;
+    animation: G15cool 5s infinite;
+}
+
+@keyframes G15cool {
+    0% {
+        background-image: url(../IMG/ROG/g15/cooling0.jpg);
+    }
+
+    33.33% {
+        background-image: url(../IMG/ROG/g15/cooling1.jpg);
+    }
+
+    66.66% {
+        background-image: url(../IMG/ROG/g15/cooling2.jpg);
+    }
+
+    100% {
+        background-image: url(../IMG/ROG/g15/cooling0.jpg);
+    }
+}
+
+.audioG15 {
+    width: 2560px;
+    height: 1500px;
+    margin-top: -300px;
+    z-index: -1;
+    background: url(../IMG/ROG/g15/audio0.jpg) center no-repeat;
+    background-size: contain;
+    animation: G15audio 2s infinite;
+}
+
+@keyframes G15audio {
+    0% {
+        background-image: url(../IMG/ROG/g15/audio0.jpg);
+    }
+
+    33.33% {
+        background-image: url(../IMG/ROG/g15/audio1.jpg);
+    }
+
+    66.66% {
+        background-image: url(../IMG/ROG/g15/audio2.jpg);
+    }
+
+    100% {
+        background-image: url(../IMG/ROG/g15/audio0.jpg);
+    }
+}
+
+.accessoryG15 {
+    width: 2560px;
+    height: 1399px;
+    margin-top: -300px;
+    z-index: -1;
+    background: url(../IMG/ROG/g15/accessory.jpg) center no-repeat;
+    background-size: contain;
+}
+
+.g15 h2 {
+    color: #db0730;
+}
+
+.g15 ul li h5 {
+    color: #db0730;
+    text-align: left;
+}
+
+.g15>.feature-detail ul li h5 small {
+    color: #db0730;
+}
+
+.g15 ul li h6 {
+    text-align: left;
+    padding-left: 3px;
+}
+
+.g15-table table thead tr th {
+    background-color: #8e0000 !important;
+}

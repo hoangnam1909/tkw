@@ -1,0 +1,645 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>ROG Zephyrus Duo 15</title>
+
+    <meta property="og:site_name" content="btl-web-design.netlify.app" />
+    <meta property="og:image" itemprop="thumbnailUrl" content="img/namdeptrai.jpg" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="354" />
+    <meta content="Bài tập lớn của Nam" itemprop="headline" property="og:title" />
+    <meta content="Bài tập lớn môn Thiết kế Web - Đại học Mở TP.HCM" itemprop="description" property="og:description" />
+
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/asus-rog.css">
+    <link rel="stylesheet" href="style/duo15.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/shorcut.png" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="style/server.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"
+        integrity="sha512-JO6JyFPJupQKZf7icgZkHwuq/rAQxH7COqvEd4WdK52AtHPedwHog05T69pIelI69jVN/zZbW6TuHfH2mS8j/Q=="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main-logo">
+            <a href="index.html">
+                <img src="IMG/main-logo.png" alt="">
+            </a>
+        </div>
+
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Trang Chủ</a>
+                </li>
+                <li>
+                    <a id="gotoProducts" style="width: 130px; text-align: center;">Sản Phẩm</a>
+                    <ul>
+                        <li class="drop-rog">
+                            <a id="gotoROG">ASUS ROG</a>
+                            <ul style="width: 180px;">
+                                <li><a href="G14.html">Zephyrus G14</a></li>
+                                <li><a href="G15.html">Zephyrus G15</a></li>
+                                <li><a href="S15.html">Zephyrus S15</a></li>
+                                <li><a href="Duo15.html">Zephyrus Duo 15</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop-razer">
+                            <a id="gotoRazer">RAZER</a>
+                            <ul style="width: 180px;">
+                                <li><a href="blade13.html">Blade Stealth 13</a></li>
+                                <li><a href="blade15.html">Blade 15</a></li>
+                                <li><a href="studio.html">Blade 15 Studio</a></li>
+                                <li><a href="blade17.html">Blade Pro 17</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="baohanh.html">Bảo Hành</a>
+                </li>
+                <li>
+                    <a href="payment.html">Thanh Toán</a>
+                </li>
+                <li>
+                    <a href="login.html">Đăng Nhập</a>
+                </li>
+                <li>
+                    <a href="register.html">Đăng Kí</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="search">
+            <form action="">
+                <input type="text" name="" placeholder="Tìm kiếm trong trang web" />
+                <img src="IMG/search.png" alt="">
+            </form>
+        </div>
+    </div>
+
+    <div class="navZep" id="navZep">
+        <ul>
+            <li><a id="gotoPerf">HIỆU NĂNG</a></li>
+            <li><a id="gotoDisplay">MÀN HÌNH</a></li>
+            <li><a id="gotoProductivity">NÂNG CẤP</a></li>
+            <li><a id="gotoDesign">THIẾT KẾ</a></li>
+            <li><a id="gotoCool">TẢN NHIỆT</a></li>
+            <li><a id="gotoAudio">ÂM THANH</a></li>
+            <li><a id="gotoVideo">GIỚI THIỆu</a></li>
+            <li><a id="gotoSpecs">CẤU HÌNH</a></li>
+            <li><a id="gotoAccessory">PHỤ KIỆN</a></li>
+        </ul>
+    </div>
+
+    <section>
+        <div class="feature">
+            <div class="begin" id="intro">
+                <img src="IMG/ROG/nb.png" alt="">
+                <input type="button" value="ĐẶT HÀNG NGAY">
+            </div>
+        </div>
+
+        <div class="feature" id="perf">
+            <img src="IMG/ROG/duo15/duo15_text.png" class="img-product-name" alt="">
+            <h2>HIỆU NĂNG TUYỆT VỜI</h2>
+            <h3>Hiệu năng ở đẳng cấp cao nhất</h3>
+
+            <div class="content-infor">
+                Làm việc và chơi hiệu quả hơn với CPU Intel® Core™ i9 thế hệ thứ 10 và GPU NVIDIA® GeForce® RTX 2080
+                SUPER™
+                Max-Q. CPU có tốc độ xử lý nhanh cho các tác vụ nặng như chỉnh sửa ảnh, kết xuất 3D và phát trực tiếp,
+                trong khi GPU mạnh mẽ cho phép đạt tỷ lệ khung hình cao và sự chân thực tuyệt vời nhằm đem lại trải
+                nghiệm
+                chơi game đắm chìm. Khả năng mở rộng RAM lên tới 32GB DDR4-3200 và ổ cứng SSD RAID 0 2TB siêu nhanh giúp
+                thực hiện đa nhiệm mượt mà và giảm thời gian tải ứng dụng và game của bạn.
+            </div>
+
+            <div class="feature-detail">
+                <ul>
+                    <li>
+                        <h5 style=" padding-top: 21px;">WINDOWS 10 PRO</h5>
+                        <h6>OS</h6>
+                    </li>
+                    <li>
+                        <h6>10TH GEN INTEL</h6>
+                        <h5>CORE I9 10980HK</h5>
+                        <h6>CPU</h6>
+                    </li>
+                    <li>
+                        <h6>NVIDIA GEFORCE</h6>
+                        <h5>RTX 2080 SUPER</h5>
+                        <h6>GPU</h6>
+                    </li>
+                    <li>
+                        <h6>HỖ TRỢ TỐI ĐA LÊN ĐẾN</h6>
+                        <h5>48GB</h5>
+                        <h6>DDR4-3200</h6>
+                    </li>
+                    <li>
+                        <h6>HỖ TRỢ TỐI ĐA LÊN ĐẾN</h6>
+                        <h5>2TB</h5>
+                        <h6>SSD RAID 0</h6>
+                    </li>
+                    <li>
+                        <h6>802.11AX</h6>
+                        <h5>WIFI 6</h5>
+                        <h6>WLAN</h6>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="performanceDuo15"></div>
+        </div>
+
+        <div class="feature" id="display">
+            <h2>MÀN HÌNH</h2>
+            <h3>Độ phân giải và tốc độ làm tươi cao</h3>
+            <div class="content-infor">
+                Điều chỉnh màn hình chính phù hợp với nhu cầu của bạn. Nhà sáng tạo nội dung sẽ yêu thích dải màu rộng
+                và độ phân giải cao của màn hình 4K UHD, hiệu chỉnh tại nhà máy cho không gian màu Adobe RGB chính xác
+                100%. Game thủ có thể tận dụng tấm nền chơi game 300Hz FHD để trải nghiệm đồ họa game chuyên nghiệp.
+                Thời gian phản hồi màn hình máy tính 3ms giúp giảm thiểu hóa hiện tượng bóng ma nhằm đem lại độ chính
+                xác khi theo dõi các mục tiêu di chuyển nhanh. Chế độ NVIDIA G-SYNC® đưa trải nghiệm hình đắm chìm lên
+                đẳng cấp mới, đem lại đồ họa mượt mà nhất. Màn hình phụ ScreenPad Plus bổ sung tính năng cảm ứng, hỗ trợ
+                bút stylus và không gian cho các bộ công cụ sáng tạo của bạn.
+            </div>
+
+            <div class="feature-detail">
+                <ul>
+                    <li>
+                        <h5>FHD & 4K UHD</h5>
+                        <h6>Tấm nền IPS</h6>
+                    </li>
+                    <li>
+                        <h5>300<small>Hz</small></h5>
+                        <h6>tần số làm tươi</h6>
+                    </li>
+                    <li>
+                        <h5>3<small>MS</small></h5>
+                        <h6>thời gian phản hồi</h6>
+                    </li>
+                    <li>
+                        <h5>100<small>%</small></h5>
+                        <h6><small>s</small>rgb & ADOBE RGB</h6>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="displayDuo15"></div>
+        </div>
+
+        <div class="feature" id="productivity">
+            <h2>KHẢ NĂNG NÂNG CẤP</h2>
+            <h3>Phù hợp với tương lai</h3>
+
+            <div class="content-infor">
+                Hỗ trợ USB Type-C với Thunderbolt™ cho phép các nhà sáng tạo, game thủ và người dùng có thể mở rộng máy
+                trạm ở bất kỳ đâu. Kết nối nhiều màn hình để hoạt động đa nhiệm hiệu quả hơn hoặc bổ sung ổ cứng tốc độ
+                cao để gửi và chỉnh sửa tệp tin đa phương tiện với tốc độ siêu nhanh. Với băng tần giao diện tối đa lên
+                tới 40 Gbps, bạn có thể trình chiếu đa phương tiện lên TV, màn hình UHD hay thậm chí với độ phân giải
+                8K. Tốc độ hệ thống và độ phản hồi được tăng cường bởi 32GB RAM 3200MHz, thậm chí có thể dễ dàng nâng
+                lên 48GB với một khe SO-DIMM bổ sung.
+            </div>
+
+            <div class="feature-detail">
+                <ul>
+                    <li>
+                        <h6>KẾT NỐI</h6>
+                        <h5>THUNDERBOLT&trade; 3</h5>
+                        <h6>SIÊU ĐA NĂNG</h6>
+                    </li>
+                    <li>
+                        <h5 style="padding-top: 21px;">THIẾT KẾ</h5>
+                        <h6>DỄ DÀNG NÂNG CẤP</h6>
+                    </li>
+                    <li>
+                        <h5 style="padding-top: 21px;">RAM</h5>
+                        <h6>CÓ THỂ NÂNG CẤP</h6>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="productivityDuo15"></div>
+        </div>
+
+        <div class="feature" id="design">
+            <h2>THIẾT KẾ</h2>
+            <h3>Nâng cấp laptop gaming siêu mỏng</h3>
+            <div class="content-infor">
+                Hiệu năng vượt trội, thiết kế độc đáo và màn hình phụ có độ chính xác tuyệt vời. Kết quả là một thiết kế
+                bản lề độc nhất vô nhị cho phép mở màn hình phụ cùng với nắp lưng, đem lại góc thuận tiện để thao tác để
+                nhìn và tương tác với màn hình cảm ứng đồng thời lấy được luồng khí vào lớn hơn giúp tăng cường hiệu
+                năng tản nhiệt trong một khung máy kim loại khối lượng nhẹ.
+            </div>
+
+            <div class="feature-detail">
+                <ul>
+                    <li>
+                        <h6 style="line-height: 20px;">góc nghiêng màn hình <br>công thái học</h6>
+                        <h5>13&deg;</h5>
+                        <h6></h6>
+                    </li>
+                    <li>
+                        <h6>vật liệu hoàn thiện</h6>
+                        <h5>THÂN MÁY</h5>
+                        <h6>HOÀN TOÀN BẰNG KIM LOẠI</h6>
+                    </li>
+                    <li>
+                        <h6>SIÊU MỎNG</h6>
+                        <h5>20,9<small>MM</small></h5>
+                        <h6>hình dạng</h6>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="designDuo15"></div>
+        </div>
+
+        <div class="feature" id="cooling">
+            <h2>TẢN NHIỆT</h2>
+            <h3>đáp ứng mọi thách thức</h3>
+            <div class="content-infor">
+                Ý tưởng về tối đa hóa hiệu năng cho laptop gaming siêu mỏng với hai màn hình tích hợp đòi hỏi chúng tôi
+                phải có những cải tiến. Hệ thống ASS Plus mới của chúng tôi có nền tảng là Hệ thống Khí động lực Chủ
+                động nhưng có thêm khu vực lấy khí vào rộng hơn 28,5mm ở phía sau màn hình phụ giúp lấy được nhiều không
+                khí hơn và giảm tiếng ồn. Khi kết hợp với phương pháp tản nhiệt mới như sử dụng keo tản nhiệt kim loại
+                lỏng trên CPU, cỗ máy này có hiệu năng thật đáng kinh ngạc. Phần mềm ROG Armoury Crate tối ưu hóa hiệu
+                năng tản nhiệt và âm thanh bằng cách chuyển đổi mượt mà giữa các chế độ hoạt động dựa trên tác vụ đang
+                xử lý.
+            </div>
+
+            <div class="feature-detail">
+                <ul>
+                    <li>
+                        <h5>AAS PLUS</h5>
+                        <h6>tản nhiệt</h6>
+                    </li>
+                    <li>
+                        <h5>KEO TẢN NHIỆT</h5>
+                        <h6>KIM LOẠI LỎNG</h6>
+                    </li>
+                    <li>
+                        <h6>LUỒNG KHÍ VÀO</h6>
+                        <h5>28,5<small>MM</small></h5>
+                    </li>
+                    <li>
+                        <h6>LUỒNG KHÍ</h6>
+                        <h5>+30<small>&percnt;</small></h5>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="coolingDuo15"></div>
+        </div>
+
+        <div class="feature" id="audio">
+            <h2>ÂM THANH</h2>
+            <h3>Tận hưởng âm thanh Ess Sabre khỏe khoắn</h3>
+            <div class="content-infor">
+                Đắm chìm trong âm thanh trung thực, High-Res Audio cung cấp bởi ESS® Sabre HiFi DAC. Đeo tai nghe ưa
+                thích của bạn để tận hưởng âm thanh vòm ảo trong trẻo, giàu màu sắc để có trải nghiệm đắm chìm. Sử dụng
+                giắc cắm microphone riêng để cắm microphone khi trò chuyện với nhóm, phát trực tiếp và nhiều hơn thế
+                nữa. Hai loa khuếch đại thông minh nằm trong giới hạn nhiệt độ và khoảng lệch để tránh gây hư hại nón
+                loa. Tăng âm lượng lên mà không làm méo âm thanh với tiếng bass trầm và rộng hơn.
+            </div>
+
+            <div class="feature-detail">
+                <ul>
+                    <li>
+                        <h5>2<small>X</small></h5>
+                        <h6>GIẮC CẮM ÂM THANH</h6>
+                    </li>
+                    <li>
+                        <h5>KÊNH 7.1</h5>
+                        <h6>ÂM THANH VÒM ẢO</h6>
+                    </li>
+                    <li><img src="IMG/ROG/essLogo.png" alt=""></li>
+                    <li><img style="height: 70px;" src="IMG/ROG/hiResLogo.jpg" alt=""></li>
+                </ul>
+            </div>
+
+            <div class="audioDuo15"></div>
+        </div>
+
+        <div class="feature" id="video">
+            <h2>Rise to New Horizons</h2>
+            <div class="embed">
+                <iframe id="player"
+                    src="https://www.youtube.com/embed/Wfb8psdWRnQ?enablejsapi=1&version=3&playerapiid=ytplayer"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="feature" id="specs">
+            <h2>CẤU HÌNH</h2>
+            <div class="table-spec duo15-table">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>sản phẩm</th>
+                            <th>ROG Zephyrus Duo 15 GX550LXS</th>
+                            <th>ROG Zephyrus Duo 15 GX550LWS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>hệ điều hành</th>
+                            <td colspan="2" style="text-align: center;">
+                                <div class="content-spec">
+                                    Windows 10 Home
+                                    <br>Windows 10 Pro - ASUS khuyến nghị Windows 10 Pro cho doanh nghiệp
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>bộ xử lí</th>
+                            <td>
+                                <div class="content-spec">
+                                    Intel® Core™ i9-10980HK
+                                    <br> Intel® Core™ i7-10875H
+                                </div>
+                            </td>
+                            <td>
+                                <div class="content-spec">
+                                    Intel® Core™ i7-10875H
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>đồ hoạ</th>
+                            <td>
+                                <div class="content-spec">
+                                    NVIDIA GeForce RTX 2080 SUPER
+                                    8GB GDDR6 VRAM<br>Xung nhịp: 1330MHz tại 90W
+                                </div>
+                            </td>
+                            <td>
+                                <div class="content-spec">
+                                    NVIDIA GeForce RTX 2070 SUPER
+                                    8GB GDDR6 VRAM<br>Xung nhịp: 1390MHz tại 90W
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>RAM</th>
+                            <td colspan="2" style="text-align: center;">
+                                <div class="content-spec">
+                                    DDR4 lên đến 3200MHz SDRAM
+                                    <br>Hỗ trợ lên đến 48GB (16GB on board)
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>SSD</th>
+                            <td colspan="2" style="text-align: center;">
+                                <div class="content-spec">
+                                    SSD M.2 NVMe PCIe 3.0 x4 1TB + 1TB hỗ trợ RAID 0
+                                    <br>M.2 NVMe PCIe 3.0 x4 512GB / 1TB SSD
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>màn hình</th>
+                            <td colspan="2" style="text-align: center;">
+                                <div class="content-spec">
+                                    15.6inch, UHD (3840 x 2160) chống lóa, tấm nền IPS 60Hz, 100% Adobe
+                                    RGB, Pantone® Validated, G-SYNC™ với màn hình cảm ứng 14.1 inch (3840 x 1100)
+
+                                    <br>15.6inch, Full HD (3840 x 1080) chống lóa, tấm nền IPS 300Hz/3ms, 100% sRGB,
+                                    Pantone® Validated, G-SYNC™ với màn hình cảm ứng 14.1 inch (3840 x 1100)
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>VR ready</th>
+                            <td colspan="2" style="text-align: center;">
+                                <div class="content-spec">CÓ</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>bàn phím</th>
+                            <td colspan="2" style="text-align: center;">
+                                <div class="content-spec">
+                                    Bàn phím chiclet
+                                    <br>Đèn RGB từng phím
+                                    <br>Khoảng cách phím 1,4mm
+                                    <br>N-key rollover
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>âm thanh</th>
+                            <td colspan="2" style="text-align: center;">
+                                <div class="content-spec">
+                                    2 x loa 4W với công nghệ Smart AMP
+                                    ESS, chứng nhận độ phân giải cao
+                                    <br>Array Microphones
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>phần mềm</th>
+                            <td colspan="2" style="text-align: center;">
+                                <div class="content-spec">
+                                    Screen Xpert (với chủ đề ROG)
+                                    <br>Armoury Crate
+                                    <br>Xsplit Gamecaster
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>cổng kết nối</th>
+                            <td colspan="2" style="text-align: center;">
+                                <div class="content-spec">
+                                    1x USB 3.2 Gen 2 Type C with DisplayPort™ 1.4, Thunderbolt™ 3 and Power Delivery
+                                    <br>2x USB 3.2 Gen 1 Type A
+                                    <br>1x USB 3.2 Gen 2 Type A
+                                    <br>1x HDMI 2.0b
+                                    <br>1x 3.5mm Microphone-in jack
+                                    <br>1x 3.5mm Microphone-in/Headphone-out jack
+                                    <br>1x RJ45
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>nguồn</th>
+                            <td colspan="2" style="text-align: center;">
+                                <div class="content-spec">
+                                    Bộ nguồn 240W
+                                    <br>Hỗ trợ Truyền điện năng 3.0 qua USB Type-C lên đến 65W
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Wi-Fi / Bluetooth</th>
+                            <td colspan="2" style="text-align: center;">
+                                <div class="content-spec">
+                                    Intel® Wi-Fi 6 với hiệu năng Gig+ (802.11ax)
+                                    <br> Bluetooth 5.0
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Kích thước</th>
+                            <td colspan="2" style="text-align: center;">
+                                <div class="content-spec">36.0(W) x 26.8(D) x 2.00(H) cm </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Trọng lượng</th>
+                            <td colspan="2" style="text-align: center;">
+                                <div class="content-spec">2.4 kg</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <div class="feature" id="accessory">
+            <h2>PHỤ KIỆN</h2>
+            <h3>SẴN SÀNG VÀ NHẬP CUỘC</h3>
+            <div class="content-infor">
+                Chơi game thật phong cách với bộ phụ kiện ROG đầy đủ. Điều hướng mượt mà và chính xác với chuột quang
+                gaming ROG Gladius II có biểu tượng Aura nổi bật. Đắm chìm trong âm thanh với tai nghe gaming ROG Delta
+                có ESS chất lượng cao, bốn DAC để có âm thanh chân thực và chi tiết nhất. Ghi lại đoạn phim Full HD ở
+                tốc độ 60 FPS mượt mà với camera bên ngoài ROG GC21 với kích thước bỏ túi. Phần kê tay đơn giản và tiện
+                tợi của bàn phím, hỗ trợ tay của bạn khi chơi. Cho phép bạn làm việc lâu hơn với bộ điều hợp ZenPower
+                Pro PD 65W. Và mang thiết bị theo bạn với ba lô 15” ROG Ranger có biểu tượng RGB.
+            </div>
+
+            <div class="accessory"></div>
+        </div>
+    </section>
+
+    <div class=" pre-footer"></div>
+
+    <div class="footer" id="footer">
+        <div class="footer-left">
+            <p class="title-footer">
+                HỖ TRỢ KHÁCH HÀNG
+            </p>
+
+            <p style="font-size: 16px; padding-bottom: 15px; color:#BA4419; text-align:center">
+                Hotline chăm sóc khách hàng<br />0866 925 254
+            </p>
+
+            <ul>
+                <li>
+                    <a href="">Câu hỏi thường gặp</a>
+                </li>
+                <li>
+                    <a href="">Hướng dẫn đặt hàng</a>
+                </li>
+                <li>
+                    <a href="">Phương thức vận chuyển</a>
+                </li>
+                <li>
+                    <a href="">Chính sách đổi trả</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-right">
+            <p class="title-footer">
+                PHƯƠNG THỨC THANH TOÁN
+            </p>
+
+            <p style="margin-left:10px">
+                <a href="payment.html" class="logo">
+                    <img src="IMG/payment/agribank.png" title="Agribank" alt="Agribank Logo" />
+                </a>
+                <a href="payment.html" class="logo">
+                    <img src="IMG/payment/vietcombank.png" title="Vietcombank" alt="Vietcombank Logo" />
+                </a>
+                <a href="payment.html" class="logo">
+                    <img class="logo" src="IMG/payment/vietinbank.png" title="VietinBank" alt="VietinBank Logo" />
+                </a>
+            </p>
+
+            <p style="margin-left:10px">
+                <a href="payment.html" class="logo">
+                    <img src="img/payment/bidv.png" title="BIDV" alt="BIDV Logo" />
+                </a>
+                <a href="payment.html" class="logo">
+                    <img src="img/payment/sacombank.png" title="Sacombank" alt="Sacombank Logo" />
+                </a>
+                <a href="payment.html" class="logo">
+                    <img src="img/payment/eximbank.png" title="Eximbank" alt="Agribank Logo" />
+                </a>
+            </p>
+        </div>
+
+        <div class="footer-right">
+            <p class="title-footer">
+                KẾT NỐI VỚI CHÚNG TÔI
+            </p>
+
+            <p style="margin-left:10px">
+                <a href="" class="logo">
+                    <img src="img/facebook.png" title="Facebook" alt="Facebook Logo" />
+                </a>
+                <a href="" class="logo">
+                    <img src="img/youtube.png" title="Youtube" alt="Youtube Logo" />
+                </a>
+                <a href="" class="logo">
+                    <img src="img/instagram.png" title="Instagram" alt="Instagram Logo" />
+                </a>
+            </p>
+
+            <p style="margin-left:10px">
+                <a href="" class="logo">
+                    <img src="img/twitter.png" title="Twitter" alt="Twitter Logo" />
+                </a>
+                <a href="" class="logo">
+                    <img src="img/reddit.png" title="Reddit" alt="Reddit Logo" />
+                </a>
+            </p>
+        </div>
+
+        <div class="footer-right">
+            <p class="title-footer">
+                TẢI ỨNG DỤNG TRÊN ĐIỆN THOẠI
+            </p>
+
+            <p style="margin-left:10px">
+                <a href="" class="logo-store">
+                    <img src="img/AppStoreBadge.png" title="Apple Store" alt="AppStoreBadge" />
+                </a>
+            </p>
+
+            <p style="margin-left:10px">
+                <a href="" class="logo-store">
+                    <img src="img/android-badge.png" title="Google Play" alt="android-badge" />
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <a class="go-to-top topblue" id="gototop"></a>
+</body>
+
+</html>

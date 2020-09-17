@@ -1,0 +1,123 @@
+section {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -65px;
+}
+
+.intro {
+    width: 2560px;
+    height: 1000px;
+    background-image: url(../IMG/RAZER/blade13/intro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    animation: intro 2s forwards;
+}
+
+.intro>h1 {
+    font-size: 50px;
+    position: relative;
+    top: 110px;
+    margin: 0;
+    text-align: center;
+}
+
+.intro>h2 {
+    color: #44d62c;
+    font-size: 40px;
+    position: relative;
+    top: 120px;
+    margin: 0;
+    text-align: center;
+}
+
+.cpu {
+    width: 2560px;
+    height: 1293px;
+    background-image: url(../IMG/RAZER/blade13/cpu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -100px 0;
+}
+
+.gpu {
+    width: 2560px;
+    height: 1250px;
+    background-image: url(../IMG/RAZER/blade13/gpu.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.display {
+    width: 2560px;
+    height: 1248px;
+    background-image: url(../IMG/RAZER/blade13/display.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.touch {
+    width: 2560px;
+    height: 1250px;
+    background-image: url(../IMG/RAZER/blade13/touch.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.battery {
+    width: 2560px;
+    height: 1336px;
+    background-image: url(../IMG/RAZER/blade13/battery.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.chroma {
+    width: 2560px;
+    height: 1350px;
+    background-image: url(../IMG/RAZER/blade13/chroma.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.speaker {
+    width: 2560px;
+    height: 1334px;
+    background-image: url(../IMG/RAZER/blade13/speaker.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.coreX {
+    width: 2560px;
+    height: 970px;
+    background-image: url(../IMG/RAZER/blade13/coreX.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.chroma ul li h6 {
+    text-align: center;
+}
+
+.feature-detail ul li h5 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.feature-detail ul li h5 small {
+    color: #ffffff;
+}
+
+.feature-detail ul li h6 {
+    text-align: center;
+}

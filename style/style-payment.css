@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+section {
+    background-color: #a4a4a4;
+    background-position: inherit;
+    background-size: cover;
+    display: flex;
+    padding: 50px 0;
+    justify-content: center;
+}
+
+section div.payment {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    border-bottom: 1px solid #626262;
+
+    background-color: #222222;
+    background-image: url(../IMG/homepage/genesis.png);
+    background-position: center;
+    background-size: 380%;
+    background-repeat: no-repeat;
+
+}
+
+.payment form {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+div.payment label {
+    font-size: 20px;
+    text-indent: 3px;
+    display: block;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+div.payment input,
+div.payment select {
+    margin-bottom: 20px;
+    font-size: 17px;
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    outline: none;
+    text-transform: uppercase;
+}
+
+div.payment textarea {
+    margin-bottom: 25px;
+    width: 300px;
+    height: 120px;
+    min-height: 60px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    outline: none;
+    resize: vertical;
+}
+
+.left,
+.right {
+    margin: 0 3%;
+}
+
+.bottom {
+    padding: 12px 20px;
+}
+
+.payment input[type=submit] {
+    height: 60px !important;
+    display: block;
+    cursor: pointer;
+    font-size: 20px !important;
+    margin-bottom: 0 !important;
+    background-color: rgb(235, 190, 42);
+}
+
+.payment input[type=submit]:hover {
+    background-color: rgb(235, 206, 114);
+}
+
+.payment input[type=submit]:active {
+    background-color: rgb(235, 218, 163);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

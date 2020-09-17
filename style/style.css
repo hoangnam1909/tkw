@@ -1,0 +1,560 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  line-height: normal;
+  font-family: "Inter", sans-serif;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: ROGFont;
+  src: url(../font/ROGFont.otf);
+}
+
+@font-face {
+  font-family: RazerFont;
+  src: url(../font/RazerThin.woff2);
+}
+
+a {
+  cursor: pointer;
+}
+
+body {
+  background-color: #000000;
+  animation: reloadEffect 0.5s;
+  overflow-x: hidden;
+}
+
+@keyframes reloadEffect {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes opacity0to1 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, .8);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+
+.main-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.main-logo img {
+  height: 60px;
+  padding: 7px 0;
+}
+
+.search form {
+  height: 40px;
+  background-color: transparent;
+  border: 0.5px solid #fff;
+  border-radius: 3px;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.search form img {
+  height: 100%;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.search form input[type="text"] {
+  width: 250px;
+  height: 100%;
+  color: white;
+  padding: 0 15px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+}
+
+/* NAVIGATION DROP MENU CSS */
+
+.navigation {
+  margin: 0 55px;
+}
+
+.navigation:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation>ul>li {
+  position: relative;
+  margin: 0 3px;
+}
+
+.navigation>ul>li>a {
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #cacaca;
+  padding: 19.4px 15px;
+  display: block;
+  font-size: 16px;
+  font-family: segoeui, Microsoft JhengHei, sans-serif;
+}
+
+.navigation ul ul a {
+  font-size: 15px;
+}
+
+.navigation ul li:hover a {
+  color: #f7f7f7;
+}
+
+.navigation ul ul {
+  position: absolute;
+  padding: 0;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s;
+}
+
+.navigation ul ul li a {
+  text-indent: 7px;
+}
+
+.navigation ul li:hover>ul {
+  visibility: visible;
+  opacity: 1;
+  animation: changeBGColor 0.3s forwards ease-out;
+}
+
+.navigation ul ul li a {
+  transition: 0.3s;
+}
+
+.navigation ul ul>li:hover>a {
+  transition: 0.3s;
+  border-left: 5px solid rgb(31, 163, 220);
+}
+
+.navigation ul ul li:hover a {
+  transition: 0.3s;
+  text-indent: 9px;
+  animation: changeBGColorD 0.3s forwards ease-out;
+}
+
+.navigation ul ul li {
+  position: relative;
+}
+
+.navigation ul ul ul {
+  width: 170px;
+  top: 0;
+  left: 100%;
+}
+
+.navigation ul ul ul li {
+  border: none !important;
+}
+
+.navigation ul ul ul li:hover a {
+  border-left: 5px solid #1fa3dc;
+  transition: 0.3s;
+  text-indent: 10px;
+  animation: changeBGColor 0.3s forwards ease-out;
+}
+
+@keyframes changeBGColor {
+  from {
+    background-color: rgba(115, 114, 114, 0.95);
+  }
+
+  to {
+    background-color: rgba(37, 37, 37, 0.95);
+  }
+}
+
+@keyframes changeBGColorD {
+  from {
+    background-color: rgba(37, 37, 37, 0.95);
+  }
+
+  to {
+    background-color: rgba(115, 114, 114, 0.95);
+  }
+}
+
+.drop-rog a {
+  border-color: #da0100 !important;
+}
+
+.drop-razer a {
+  border-color: #44d62c !important;
+}
+
+/* CONTENT CSS*/
+
+.content {
+  width: 100%;
+  height: 650px;
+  background-color: #e6e6e6;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  user-select: none;
+
+  animation: opacity0to1 3s forwards;
+}
+
+#rog {
+  background-image: url(../IMG/homepage/genesis.png);
+  background-size: 70%;
+  background-position: right;
+}
+
+#razer {
+  background-image: url(../IMG/RAZER/banner.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: local;
+  color: white;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.text h2 {
+  width: 350px;
+  position: relative;
+  top: 100px;
+  left: -450px;
+  margin: 0 auto;
+  font-size: 100px;
+  font-family: ROGFont, Arial, Helvetica, sans-serif !important;
+  text-align: left;
+  line-height: 60px;
+}
+
+#rog>.text h2 {
+  color: #ff0029;
+}
+
+#razer>.text h2 {
+  font-size: 60px;
+  text-transform: capitalize;
+  line-height: 65px;
+  color: #44d62c;
+  font-family: RazerFont, Arial, Helvetica, sans-serif !important;
+}
+
+.text p {
+  width: 350px;
+  position: relative;
+  top: 160px;
+  left: -450px;
+  margin: 0 auto;
+
+  font-size: 15px;
+  text-align: left;
+  line-height: 25px;
+}
+
+#razer>.text p {
+  top: 130px;
+}
+
+.text input[type="button"] {
+  width: 210px;
+  height: 50px;
+  position: relative;
+  top: 190px;
+  left: -465px;
+  margin: 0 auto;
+  outline: none;
+  font-size: 18px;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: transparent;
+
+  transition: background-color 0.5s;
+}
+
+.text input:hover {
+  color: white;
+  background-color: black;
+}
+
+#razer>div.text input[type="button"] {
+  top: 170px;
+  color: white;
+  border: 1px solid white;
+}
+
+#razer>div.text input[type="button"]:hover {
+  color: black;
+  background-color: white;
+}
+
+.go-to-top {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/arrow.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  bottom: 25px;
+  right: 30px;
+}
+
+.topblue {
+  background-image: url(../img/ROG/top-blue.png);
+}
+
+.topred {
+  background-image: url(../img/ROG/top-red.png);
+}
+
+.topgreen {
+  background-image: url(../IMG/RAZER/top-green.png);
+}
+
+.go-to-top:active {
+  transform: scale(0.97);
+}
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  width: 100%;
+  background-color: #171717;
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+  user-select: none;
+}
+
+.footer-left {
+  width: 270px;
+  margin: 0 20px;
+  text-align: center;
+  color: #2e86c1;
+}
+
+.footer-left ul li {
+  list-style: none;
+  padding-bottom: 10px;
+  font-size: 13px;
+}
+
+.footer-left ul li a {
+  text-decoration: none;
+  color: #cccccc;
+}
+
+.footer-right {
+  width: 270px;
+  margin: 0 20px;
+  text-align: center;
+  color: #2e86c1;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-footer {
+  font-size: 16px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 7px;
+  vertical-align: middle;
+}
+
+.logo-store {
+  display: inline-block;
+}
+
+.logo-store img {
+  width: 170px;
+  height: auto;
+  background-repeat: no-repeat;
+  border-style: none;
+  margin-right: 10px;
+  margin-bottom: 7px;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #292929;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000;
+}
+
+.sk-folding-cube {
+  width: 120px;
+  height: 120px;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #a88b65;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+  animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+  transform: scale(1.1) rotateZ(90deg);
+}
+
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+  transform: scale(1.1) rotateZ(180deg);
+}
+
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+  transform: scale(1.1) rotateZ(270deg);
+}
+
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+@-webkit-keyframes sk-foldCubeAngle {
+
+  0%,
+  10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  }
+
+  25%,
+  75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  90%,
+  100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-foldCubeAngle {
+
+  0%,
+  10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  }
+
+  25%,
+  75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  90%,
+  100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}

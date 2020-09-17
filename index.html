@@ -1,0 +1,542 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Bài Tập Lớn - Thiết Kế Web</title>
+
+    <meta property="og:site_name" content="btl-web-design.netlify.app" />
+    <meta property="og:image" itemprop="thumbnailUrl" content="img/namdeptrai.jpg" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="354" />
+    <meta content="Bài tập lớn của Nam" itemprop="headline" property="og:title" />
+    <meta content="Bài tập lớn môn Thiết kế Web - Đại học Mở TP.HCM" itemprop="description" property="og:description" />
+
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/Product-style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/shorcut.png" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="style/server.js"></script>
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main-logo">
+            <a href="index.html">
+                <img src="IMG/main-logo.png" alt="" />
+            </a>
+        </div>
+
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Trang Chủ</a>
+                </li>
+                <li>
+                    <a>Sản Phẩm</a>
+                    <ul style="width: 130px;">
+                        <li class=" drop-rog">
+                            <a id="gotoROG">ASUS ROG</a>
+                            <ul style="width: 180px">
+                                <li><a href="G14.html">Zephyrus G14</a></li>
+                                <li><a href="G15.html">Zephyrus G15</a></li>
+                                <li><a href="S15.html">Zephyrus S15</a></li>
+                                <li><a href="Duo15.html">Zephyrus Duo 15</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop-razer">
+                            <a id="gotoRazer">RAZER</a>
+                            <ul style="width: 180px">
+                                <li><a href="blade13.html">Blade Stealth 13</a></li>
+                                <li><a href="blade15.html">Blade 15</a></li>
+                                <li><a href="studio.html">Blade 15 Studio</a></li>
+                                <li><a href="blade17.html">Blade Pro 17</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="baohanh.html">Bảo Hành</a>
+                </li>
+                <li>
+                    <a href="payment.html">Thanh Toán</a>
+                </li>
+                <li>
+                    <a href="login.html">Đăng Nhập</a>
+                </li>
+                <li>
+                    <a href="register.html">Đăng Kí</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="search">
+            <form action="">
+                <input type="text" name="" placeholder="Tìm kiếm trong trang web" />
+                <img src="IMG/search.png" alt="" />
+            </form>
+        </div>
+    </div>
+
+    <!-- ================= ASUS ROG ================= -->
+    <div class="content" id="rog">
+        <div class="text">
+            <h2>OUR<br />MISSON</h2>
+
+            <p>
+                Unite gamers of diverse backgrounds to achieve their potential
+                together in play. Through innovative technology and exceptional
+                experiences, we can push boundaries to create a world without limits.
+            </p>
+
+            <input type="button" value="LEARN MORE" />
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="IMG/ROG/ROG.png" alt="" />
+        <div class="option-cpu img-laptop">
+            <ul>
+                <li>
+                    <a href="G14.html">
+                        <img src="img/ROG/g14/g14_product.png" title="Zephyrus G14" />
+                    </a>
+                    <p>ROG Zephyrus G14</p>
+                </li>
+                <li>
+                    <a href="G15.html">
+                        <img src="img/ROG/g15/g15_product.png" title="Zephyrus G15" />
+                    </a>
+                    <p>ROG Zephyrus G15</p>
+                </li>
+                <li>
+                    <a href="S15.html">
+                        <img src="img/ROG/s15/s15_product.png" title="Zephyrus S15" />
+                    </a>
+                    <p>ROG Zephyrus S15</p>
+                </li>
+                <li>
+                    <a href="Duo15.html">
+                        <img src="img/ROG/duo15/duo15_product.png" title="Zephyrus Duo 15" />
+                    </a>
+                    <p>ROG Zephyrus Duo 15</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="detail-box">
+            <div class="product-detail">
+                <div class="product-detail-content rog-box">
+                    <img src="img/ROG/spec-back.png" alt="" />
+
+                    <p class="detail-title">Specifications</p>
+
+                    <p class="product-content">
+                        Làm việc và chơi hiệu quả hơn với CPU Intel Core i9 thế hệ thứ 10
+                        và GPU NVIDIA GeForce RTX 2080 SUPER Max-Q.
+                    </p>
+                    <p class="product-content">
+                        CPU có tốc độ xử lý nhanh cho các tác vụ nặng như chỉnh sửa ảnh,
+                        kết xuất 3D và phát trực tiếp, trong khi GPU mạnh mẽ cho phép đạt
+                        tỷ lệ khung hình cao và sự chân thực tuyệt vời.
+                    </p>
+                </div>
+            </div>
+
+            <div class="product-detail">
+                <div class="product-detail-content rog-box">
+                    <img src="IMG/ROG/display.jpg" alt="" />
+
+                    <p class="detail-title">Display</p>
+
+                    <p class="product-content">
+                        Kiến trúc đồ họa NVIDIA Turing tiên tiến đưa công nghệ dò tia
+                        trong thời gian thực và AI vào game. ROG tăng tốc xung nhịp của
+                        GeForce RTX 2080 SUPER MaxQ lên đến 1330MHz ở chế độ Turbo.
+                    </p>
+                    <p class="product-content">
+                        GPU này có khả năng tạo ánh sáng, đổ bóng và phản xạ ấn tượng.
+                    </p>
+                </div>
+            </div>
+
+            <div class="product-detail">
+                <div class="product-detail-content rog-box">
+                    <img src="IMG/ROG/audio.jpg" alt="" />
+
+                    <p class="detail-title">Audio</p>
+
+                    <p class="product-content">
+                        Đắm chìm trong âm thanh trung thực, High-Res Audio cung cấp bởi
+                        ESS Sabre HiFi DAC. Đeo tai nghe ưa thích của bạn để tận hưởng âm
+                        thanh vòm ảo trong trẻo, giàu màu sắc để có trải nghiệm đắm chìm.
+                    </p>
+                    <p class="product-content">
+                        Bạn có thể dễ dàng xác định và tùy chỉnh các cấu hình theo mức
+                        công suất.
+                    </p>
+                </div>
+            </div>
+
+            <div class="product-detail">
+                <div class="product-detail-content rog-box">
+                    <img src="IMG/ROG/keyboard.jpg" alt="" />
+
+                    <p class="detail-title">Keyboard</p>
+
+                    <p class="product-content">
+                        Được thiết kế để nhập chính xác, bàn phím mang phong cách của máy
+                        tính để bàn duy trì khoảng cách giữ các phím chức năng để dễ nhận
+                        diện.
+                    </p>
+                    <p class="product-content">
+                        Có các phím nóng để giữ những lệnh thiết yếu ngay trong tầm tay và
+                        trang bị công nghệ N-key rollover để ghi nhận chính xác nhiều phím
+                        ấn đồng thời.
+                    </p>
+                </div>
+            </div>
+
+            <div class="product-detail">
+                <div class="product-detail-content rog-box">
+                    <img src="IMG/ROG/cooling.png" alt="" />
+
+                    <p class="detail-title">Cooling</p>
+
+                    <p class="product-content">
+                        Hệ thống AAS Plus mới tạo ra họng khí cao 28,5mm bên dưới màn hình
+                        phụ để tăng luồng khí thêm 30%.
+                    </p>
+                    <p class="product-content">
+                        Năm ống dẫn nhiệt không chỉ dẫn nhiệt từ CPU và GPU mà còn từ hệ
+                        mạch điện cấp nguồn cho hai bộ xử lý này. Việc giảm nhiệt độ cho
+                        các linh kiện điện này giúp tăng tính ổn định và độ tin cậy.
+                    </p>
+                </div>
+            </div>
+
+            <div class="product-detail">
+                <div class="product-detail-content rog-box">
+                    <img src="IMG/ROG/software.jpg" alt="" />
+
+                    <p class="detail-title">Armoury Crate</p>
+
+                    <p class="product-content">
+                        ROG Armoury Crate hợp nhất chức năng điều khiển hệ thống và ánh
+                        sáng để đưa những tùy chọn cài đặt thiết yếu đến ngay trong tầm
+                        tay bạn trong một tiện ích duy nhất.
+                    </p>
+                    <p class="product-content">
+                        Bạn có thể dễ dàng xác định và tùy chỉnh các cấu hình theo mức
+                        công suất.
+                    </p>
+                </div>
+            </div>
+
+            <div class="product-detail">
+                <div class="product-detail-content rog-box">
+                    <img src="IMG/ROG/upgrade.jpg" alt="" />
+
+                    <p class="detail-title">Easy Upgrade</p>
+
+                    <p class="product-content">
+                        Nhanh gấp 4 lần USB 3.1, Thunderbolt 3 đem lại tốc độ truyền dữ
+                        liệu nhanh nhất cho nhiều thiết bị.
+                    </p>
+                    <p class="product-content">
+                        Thiết kế giúp nâng cấp dễ dàng làm đơn giản hóa quá trình thay ổ
+                        cứng và bộ nhớ hệ thống. Tháo ốc để gỡ đáy khung máy ra khỏi thân.
+                        Tất cả khe SO-DIMM và SSD đều có thể dễ dàng tiếp cận từ tấm đáy,
+                        giúp thay đổi dễ dàng.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================== RAZER =================== -->
+    <div class="content" id="razer">
+        <div class="text">
+            <h2>For Gamers<br />By Gamers</h2>
+
+            <p>
+                Explore a complete arsenal of gaming laptops to suit your needs both
+                work and play. Experience only the best graphics on a superior
+                display, backed by a system that's powered with the latest in
+                technology.
+            </p>
+
+            <input type="button" value="LEARN MORE" />
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="IMG/RAZER/text.png" alt="" />
+        <div class="option-cpu img-laptop">
+            <ul>
+                <li>
+                    <a href="blade13.html">
+                        <img src="img/RAZER/blade13_product.png" title="Blade Stealth 13" />
+                    </a>
+                    <p>Razer Blade Stealth 13</p>
+                </li>
+                <li>
+                    <a href="blade15.html">
+                        <img src="img/RAZER/blade15_product.png" title="Blade 15" />
+                    </a>
+                    <p>Razer Blade 15</p>
+                </li>
+                <li>
+                    <a href="studio.html">
+                        <img src="img/RAZER/studio_product.png" title="Blade Studio" />
+                    </a>
+                    <p>Razer Blade 15 Studio</p>
+                </li>
+                <li>
+                    <a href="blade17.html">
+                        <img src="img/RAZER/blade17_product.png" title="Blade Pro 17" />
+                    </a>
+                    <p>Razer Blade Pro 17</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="detail-box">
+            <div class="product-detail">
+                <div class="product-detail-content razer-box">
+                    <img src="img/RAZER/power.jpg" alt="" />
+
+                    <p class="detail-title">More Power</p>
+
+                    <p class="product-content">
+                        Now with the option to pair a 10th Gen Intel® Core™ i7 processor
+                        with NVIDIA® GeForce RTX™ graphics, the Razer Blade potent
+                        performance is fully capable of powering through creative tasks
+                        with ease, and can handle the running and streaming of the latest
+                        AAA games simultaneously including support for real-time ray
+                        tracing.
+                    </p>
+                </div>
+            </div>
+
+            <div class="product-detail">
+                <div class="product-detail-content razer-box">
+                    <img src="img/RAZER/display.jpg" alt="" />
+
+                    <p class="detail-title">Display</p>
+
+                    <p class="product-content">
+                        In competitive games where a high frame rate's crucial to edging
+                        out a win, feel and see the distinct advantage with refresh rates
+                        of up to 300Hz. With on screen action this smooth and fluid, it'll
+                        allow you to spot things earlier, track a headshot faster, and
+                        take your game to its absolute limit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="product-detail">
+                <div class="product-detail-content razer-box">
+                    <img src="img/RAZER/audio.jpg" alt="" />
+
+                    <p class="detail-title">Immersive Audio</p>
+
+                    <p class="product-content">
+                        The four upward firing stereo speakers and smart amplifier provide
+                        greater audio boost and clarity. Dolby Atmos replicates sound in
+                        a 3-dimensional space for lifelike immersion that flows all around
+                        you whether you're gaming or watching movies.
+                    </p>
+                    <p class="product-content">4X SPEAKERS + SMART AMP.</p>
+                </div>
+            </div>
+
+            <div class="product-detail">
+                <div class="product-detail-content razer-box">
+                    <img src="img/RAZER/chroma.jpg" alt="" />
+
+                    <p class="detail-title">Chroma RGB</p>
+
+                    <p class="product-content">
+                        Enjoy a dynamic level of audio visualization with colorful sound
+                        waves that jump up and down on your device as you play your
+                        favorite music, games, and videos.
+                    </p>
+                    <p class="product-content">
+                        If you're looking for an RGB lighting effect that's truly unique,
+                        tweak and tinker to your heart's content with our Chroma Studio
+                        where you can modify our existing effects or design your own.
+                    </p>
+                </div>
+            </div>
+
+            <div class="product-detail">
+                <div class="product-detail-content razer-box">
+                    <img src="img/RAZER/vapor.jpg" alt="" />
+
+                    <p class="detail-title">vapor chamber</p>
+
+                    <p class="product-content">
+                        The Advanced Models of the Razer Blade 15 utilizes a custom vapor
+                        chamber and cutting edge thermal materials to efficiently and
+                        quietly dissipate heat for maximum performance and user comfort.
+                        The Base Model features a bespoke heat pipe system, capable of
+                        handling the thermal needs under the heaviest of loads.
+                    </p>
+                </div>
+            </div>
+
+            <div class="product-detail">
+                <div class="product-detail-content razer-box">
+                    <img src="img/RAZER/ultra-thin.jpg" alt="" />
+
+                    <p class="detail-title">Ultra-thin</p>
+
+                    <p class="product-content">
+                        Going as thin as 0.7 inches, the precision crafted aluminum
+                        chassis is made even more durable through the process of anodizing
+                        an electro-chemical bonding between the frame and protective
+                        coating as part of the laptop's Black or Mercury White finish.
+                    </p>
+                </div>
+            </div>
+
+            <div class="product-detail">
+                <div class="product-detail-content razer-box">
+                    <img src="img/RAZER/coreX.jpg" alt="" />
+
+                    <p class="detail-title">Razer Core X</p>
+
+                    <p class="product-content">
+                        Connect the Razer Blade Stealth 13 laptop to the Razer Core X
+                        external graphics to experience a surge in graphic performance for
+                        desktop-grade gaming and advanced creative production2.
+                    </p>
+
+                    <p class="product-content">
+                        The Core X emerges as the go-to single I/O Thunderbolt 3 eGPU
+                        enclosure that can pair with almost all graphics cards and
+                        Thunderbolt 3 laptops.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" id="footer">
+        <div class="footer-left">
+            <p class="title-footer">HỖ TRỢ KHÁCH HÀNG</p>
+
+            <p style="
+            font-size: 16px;
+            padding-bottom: 15px;
+            color: #ba4419;
+            text-align: center;
+          ">
+                Hotline chăm sóc khách hàng<br />0866 925 254
+            </p>
+
+            <ul>
+                <li>
+                    <a data-toggle="tooltip" title="Ho tro khach hang" href="">Câu hỏi thường gặp</a>
+                </li>
+                <li>
+                    <a href="">Hướng dẫn đặt hàng</a>
+                </li>
+                <li>
+                    <a href="">Phương thức vận chuyển</a>
+                </li>
+                <li>
+                    <a href="">Chính sách đổi trả</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-right">
+            <p class="title-footer">PHƯƠNG THỨC THANH TOÁN</p>
+
+            <p style="margin-left: 10px">
+                <a href="payment.html" class="logo">
+                    <img src="IMG/payment/agribank.png" title="Agribank" alt="Agribank Logo" />
+                </a>
+                <a href="payment.html" class="logo">
+                    <img src="IMG/payment/vietcombank.png" title="Vietcombank" alt="Vietcombank Logo" />
+                </a>
+                <a href="payment.html" class="logo">
+                    <img class="logo" src="IMG/payment/vietinbank.png" title="VietinBank" alt="VietinBank Logo" />
+                </a>
+            </p>
+
+            <p style="margin-left: 10px">
+                <a href="payment.html" class="logo">
+                    <img src="img/payment/bidv.png" title="BIDV" alt="BIDV Logo" />
+                </a>
+                <a href="payment.html" class="logo">
+                    <img src="img/payment/sacombank.png" title="Sacombank" alt="Sacombank Logo" />
+                </a>
+                <a href="payment.html" class="logo">
+                    <img src="img/payment/eximbank.png" title="Eximbank" alt="Agribank Logo" />
+                </a>
+            </p>
+        </div>
+
+        <div class="footer-right">
+            <p class="title-footer">KẾT NỐI VỚI CHÚNG TÔI</p>
+
+            <p style="margin-left: 10px">
+                <a href="" class="logo">
+                    <img src="img/facebook.png" title="Facebook" alt="Facebook Logo" />
+                </a>
+                <a href="" class="logo">
+                    <img src="img/youtube.png" title="Youtube" alt="Youtube Logo" />
+                </a>
+                <a href="" class="logo">
+                    <img src="img/instagram.png" title="Instagram" alt="Instagram Logo" />
+                </a>
+            </p>
+
+            <p style="margin-left: 10px">
+                <a href="" class="logo">
+                    <img src="img/twitter.png" title="Twitter" alt="Twitter Logo" />
+                </a>
+                <a href="" class="logo">
+                    <img src="img/reddit.png" title="Reddit" alt="Reddit Logo" />
+                </a>
+            </p>
+        </div>
+
+        <div class="footer-right">
+            <p class="title-footer">TẢI ỨNG DỤNG TRÊN ĐIỆN THOẠI</p>
+
+            <p style="margin-left: 10px">
+                <a href="" class="logo-store">
+                    <img src="img/AppStoreBadge.png" title="Apple Store" alt="AppStoreBadge" />
+                </a>
+            </p>
+
+            <p style="margin-left: 10px">
+                <a href="" class="logo-store">
+                    <img src="img/android-badge.png" title="Google Play" alt="android-badge" />
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <a class="go-to-top" id="gototop"></a>
+</body>
+
+</html>

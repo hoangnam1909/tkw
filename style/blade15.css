@@ -1,0 +1,153 @@
+section {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -65px;
+}
+
+.intro {
+    width: 2560px;
+    height: 1200px;
+    background-image: url(../IMG/RAZER/blade15/intro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    animation: intro 2s forwards;
+}
+
+.intro>h1 {
+    font-size: 50px;
+    position: relative;
+    top: 80px;
+    margin: 0;
+    text-align: center;
+}
+
+.intro>h2 {
+    color: #44d62c;
+    font-size: 40px;
+    position: relative;
+    top: 90px;
+    margin: 0;
+    text-align: center;
+}
+
+.cpu {
+    width: 2560px;
+    height: 1050px;
+    background-image: url(../IMG/RAZER/blade15/cpu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.cpu>div.feature-detail ul li h6 {
+    font-size: 15px !important;
+    text-align: center;
+    padding-left: 3px;
+    line-height: 22px;
+}
+
+.ver {
+    width: 2560px;
+    height: 1100px;
+    background-image: url(../IMG/RAZER/blade15/ver.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.ver>div.feature-detail ul li h5 {
+    font-size: 18px !important;
+    text-align: center;
+}
+
+.ver>div.feature-detail ul li h6 {
+    font-size: 14px !important;
+    text-align: center;
+    line-height: 22px;
+    margin: 0;
+    width: 280px;
+    color: #e4e4e4;
+}
+
+.gpu {
+    width: 2560px;
+    height: 1200px;
+    background-image: url(../IMG/RAZER/blade15/gpu.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.display-gaming {
+    width: 2560px;
+    height: 1100px;
+    background-image: url(../IMG/RAZER/blade15/display-gaming.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.display-forWork {
+    width: 2560px;
+    height: 1280px;
+    background-image: url(../IMG/RAZER/blade15/display-forWork.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.thin {
+    width: 2560px;
+    height: 1093px;
+    background-image: url(../IMG/RAZER/blade15/thin.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.thin>div.content-infor {
+    color: black;
+}
+
+.thin>div.feature-detail ul li h5,
+.thin>div.feature-detail ul li h5 small,
+.thin>div.feature-detail ul li h6,
+.thin>div.feature-detail ul li h6 small {
+    color: black;
+}
+
+.cool {
+    width: 2560px;
+    height: 1250px;
+    background-image: url(../IMG/RAZER/blade15/cool.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.keyboard {
+    width: 2560px;
+    height: 1180px;
+    background-image: url(../IMG/RAZER/blade15/keyboard.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.feature-detail ul li h5 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.feature-detail ul li h6 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.feature-detail ul li img {
+    height: 56px;
+    margin: 0 auto;
+}

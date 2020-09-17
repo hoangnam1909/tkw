@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Thanh Toán</title>
+
+    <meta property="og:site_name" content="btl-web-design.netlify.app" />
+    <meta property="og:image" itemprop="thumbnailUrl" content="img/namdeptrai.jpg" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="354" />
+    <meta content="Bài tập lớn của Nam" itemprop="headline" property="og:title" />
+    <meta content="Bài tập lớn môn Thiết kế Web - Đại học Mở TP.HCM" itemprop="description" property="og:description" />
+
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/style-payment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/shorcut.png" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="style/server.js"></script>
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main-logo">
+            <a href="index.html">
+                <img src="IMG/main-logo.png" alt="">
+            </a>
+        </div>
+
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Trang Chủ</a>
+                </li>
+                <li>
+                    <a id="gotoProducts" style="width: 130px; text-align: center;">Sản Phẩm</a>
+                    <ul>
+                        <li class="drop-rog">
+                            <a id="gotoROG">ASUS ROG</a>
+                            <ul style="width: 180px;">
+                                <li><a href="G14.html">Zephyrus G14</a></li>
+                                <li><a href="G15.html">Zephyrus G15</a></li>
+                                <li><a href="S15.html">Zephyrus S15</a></li>
+                                <li><a href="Duo15.html">Zephyrus Duo 15</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop-razer">
+                            <a id="gotoRazer">RAZER</a>
+                            <ul style="width: 180px;">
+                                <li><a href="blade13.html">Blade Stealth 13</a></li>
+                                <li><a href="blade15.html">Blade 15</a></li>
+                                <li><a href="studio.html">Blade 15 Studio</a></li>
+                                <li><a href="blade17.html">Blade Pro 17</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="baohanh.html">Bảo Hành</a>
+                </li>
+                <li>
+                    <a href="payment.html">Thanh Toán</a>
+                </li>
+                <li>
+                    <a href="login.html">Đăng Nhập</a>
+                </li>
+                <li>
+                    <a href="register.html">Đăng Kí</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="search">
+            <form action="">
+                <input type="text" name="" placeholder="Tìm kiếm trong trang web" />
+                <img src="IMG/search.png" alt="">
+            </form>
+        </div>
+    </div>
+
+    <section>
+        <div class="payment">
+            <form action="index.html">
+                <div class="left">
+                    <label>tên người gửi</label>
+                    <input type="text" placeholder="NGUYEN VAN A" required>
+
+                    <label>số tài khoản</label>
+                    <input type="number" placeholder="XXXXX XXXX XXXX" required>
+
+                    <label>ngân hàng</label>
+                    <select name="" id="">
+                        <option value="Agribank">Agribank</option>
+                        <option value="Vietcombank">Vietcombank</option>
+                        <option value="VietinBank">VietinBank</option>
+                        <option value="BIDV">BIDV</option>
+                        <option value="Sacombank">Sacombank</option>
+                        <option value="Eximbank">Eximbank</option>
+                    </select>
+                </div>
+
+                <div class="right">
+                    <label>tên người nhận</label>
+                    <input type="text" value="NGUYEN HOANG NAM" readonly>
+
+                    <label>số tài khoản</label>
+                    <input type="text" value="52122 0521 2203" readonly>
+
+                    <label>ngân hàng</label>
+                    <select name="" id="" disabled>
+                        <option value="Agribank">Agribank</option>
+                        <option value="Vietcombank">Vietcombank</option>
+                        <option value="VietinBank">VietinBank</option>
+                        <option value="BIDV">BIDV</option>
+                        <option value="Sacombank">Sacombank</option>
+                        <option value="Eximbank">Eximbank</option>
+                    </select>
+                </div>
+
+                <div class="bottom">
+                    <label>số tiền</label>
+                    <input type="number" placeholder="VNĐ" required>
+
+                    <label>lời nhắn</label>
+                    <textarea id="" cols="30" rows="10" placeholder="Chuyển khoản mã đơn hàng: #123123"></textarea>
+
+                    <input type="submit" value="Xác Nhận">
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <div class="footer" id="footer">
+        <div class="footer-left">
+            <p class="title-footer">
+                HỖ TRỢ KHÁCH HÀNG
+            </p>
+
+            <p style="font-size: 16px; padding-bottom: 15px; color:#BA4419; text-align:center">
+                Hotline chăm sóc khách hàng<br />0866 925 254
+            </p>
+
+            <ul>
+                <li>
+                    <a href="">Câu hỏi thường gặp</a>
+                </li>
+                <li>
+                    <a href="">Hướng dẫn đặt hàng</a>
+                </li>
+                <li>
+                    <a href="">Phương thức vận chuyển</a>
+                </li>
+                <li>
+                    <a href="">Chính sách đổi trả</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-right">
+            <p class="title-footer">
+                PHƯƠNG THỨC THANH TOÁN
+            </p>
+
+            <p style="margin-left:10px">
+                <a href="payment.html" class="logo">
+                    <img src="IMG/payment/agribank.png" title="Agribank" alt="Agribank Logo" />
+                </a>
+                <a href="payment.html" class="logo">
+                    <img src="IMG/payment/vietcombank.png" title="Vietcombank" alt="Vietcombank Logo" />
+                </a>
+                <a href="payment.html" class="logo">
+                    <img class="logo" src="IMG/payment/vietinbank.png" title="VietinBank" alt="VietinBank Logo" />
+                </a>
+            </p>
+
+            <p style="margin-left:10px">
+                <a href="payment.html" class="logo">
+                    <img src="img/payment/bidv.png" title="BIDV" alt="BIDV Logo" />
+                </a>
+                <a href="payment.html" class="logo">
+                    <img src="img/payment/sacombank.png" title="Sacombank" alt="Sacombank Logo" />
+                </a>
+                <a href="payment.html" class="logo">
+                    <img src="img/payment/eximbank.png" title="Eximbank" alt="Agribank Logo" />
+                </a>
+            </p>
+        </div>
+
+        <div class="footer-right">
+            <p class="title-footer">
+                KẾT NỐI VỚI CHÚNG TÔI
+            </p>
+
+            <p style="margin-left:10px">
+                <a href="" class="logo">
+                    <img src="img/facebook.png" title="Facebook" alt="Facebook Logo" />
+                </a>
+                <a href="" class="logo">
+                    <img src="img/youtube.png" title="Youtube" alt="Youtube Logo" />
+                </a>
+                <a href="" class="logo">
+                    <img src="img/instagram.png" title="Instagram" alt="Instagram Logo" />
+                </a>
+            </p>
+
+            <p style="margin-left:10px">
+                <a href="" class="logo">
+                    <img src="img/twitter.png" title="Twitter" alt="Twitter Logo" />
+                </a>
+                <a href="" class="logo">
+                    <img src="img/reddit.png" title="Reddit" alt="Reddit Logo" />
+                </a>
+            </p>
+        </div>
+
+        <div class="footer-right">
+            <p class="title-footer">
+                TẢI ỨNG DỤNG TRÊN ĐIỆN THOẠI
+            </p>
+
+            <p style="margin-left:10px">
+                <a href="" class="logo-store">
+                    <img src="img/AppStoreBadge.png" title="Apple Store" alt="AppStoreBadge" />
+                </a>
+            </p>
+
+            <p style="margin-left:10px">
+                <a href="" class="logo-store">
+                    <img src="img/android-badge.png" title="Google Play" alt="android-badge" />
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <a class="go-to-top" id="gototop"></a>
+</body>
+
+</html>
